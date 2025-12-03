@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Injection Vulnerability Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SQL Injection Vulnerability Lab</h1>
+        <p class="warning">⚠️ <strong>WARNING:</strong> This is an intentionally vulnerable application for educational purposes only. DO NOT deploy on production servers!</p>
+
+        <div class="lab-section">
+            <h2>🔓 Vulnerable Login (Target for SQLi Attacks)</h2>
+            <p class="description">This login uses unsafe string concatenation. Test various SQL injection payloads here.</p>
+            <form action="vulnerable_login.php" method="POST" class="login-form">
+                <div class="form-group">
+                    <label for="vuln-username">Username:</label>
+                    <input type="text" id="vuln-username" name="username" placeholder="Enter username or SQLi payload" required>
+                </div>
+                <div class="form-group">
+                    <label for="vuln-password">Password:</label>
+                    <input type="password" id="vuln-password" name="password" placeholder="Enter password (can be empty for bypass)">
+                </div>
+                <button type="submit" class="btn btn-danger">Login (Vulnerable)</button>
+            </form>
+        </div>
+
+        <div class="lab-section">
+            <h2>🔒 Secure Login (Protected Implementation)</h2>
+            <p class="description">This login uses prepared statements and is protected against SQL injection.</p>
+            <form action="secure_login.php" method="POST" class="login-form">
+                <div class="form-group">
+                    <label for="secure-username">Username:</label>
+                    <input type="text" id="secure-username" name="username" placeholder="Enter valid username" required>
+                </div>
+                <div class="form-group">
+                    <label for="secure-password">Password:</label>
+                    <input type="password" id="secure-password" name="password" placeholder="Enter valid password" required>
+                </div>
+                <button type="submit" class="btn btn-success">Login (Secure)</button>
+            </form>
+        </div>
+
+        <div id="message-area" class="message-area">
+            <!-- Dynamic messages will appear here -->
+        </div>
+
+        <div class="info-section">
+            <h3>📚 Valid Credentials for Testing:</h3>
+            <ul>
+                <li><strong>admin</strong> / pass123</li>
+                <li><strong>test</strong> / user456</li>
+                <li><strong>guest</strong> / guest789</li>
+            </ul>
+            <p class="note">Refer to <code>README.md</code> for detailed attack payloads and instructions.</p>
+        </div>
+    </div>
+</body>
+</html>
