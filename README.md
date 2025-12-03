@@ -82,6 +82,16 @@ sqli_lab/
 - **test** / user456
 - **guest** / guest789
 
+<img width="1011" height="960" alt="Screenshot 2025-12-03 234151" src="https://github.com/user-attachments/assets/25cf5486-e440-44be-bccc-9a1b828d4d07" />
+
+<img width="974" height="349" alt="Screenshot 2025-12-03 234427" src="https://github.com/user-attachments/assets/5f252a56-5ee7-4bea-972f-9e3f6f078d3f" /><img width="530" height="347" alt="Screenshot 2025-12-03 234439" src="https://github.com/user-attachments/assets/8dfffe62-acde-417b-8bf2-b4dc30b1a01d" />
+
+<img width="949" height="344" alt="Screenshot 2025-12-03 234502" src="https://github.com/user-attachments/assets/4781e22b-c47c-4e82-a3cd-b0f5d147425d" /><img width="540" height="258" alt="Screenshot 2025-12-03 234510" src="https://github.com/user-attachments/assets/08e7a6cc-3cb4-4173-8648-ad406168aa56" />
+
+
+
+
+
 ---
 
 ## 1. In-Band SQL Injection
